@@ -1,38 +1,53 @@
+name: Publish Omni Gateway policy
 on:
+  push:
+    branches: [main]
+    tags: ['v*']
   workflow_dispatch:
-    inputs:
-      client_id:
-        description: 'Anypoint Connected App client ID'
-        required: true
-      client_secret:
-        description: 'Anypoint Connected App client secret'
-        required: true
-      org_id:
-        description: 'Anypoint org ID'
-        required: true
-      mode:
-        description: 'publish or release'
-        type: choice
-        options: [publish, release]
-        default: publish
 
 jobs:
   build-publish:
     runs-on: ubuntu-latest
+    environment: anypoint-prod          # remove if not using environments
+    env:
+      ANYPOINT_CLIENT_ID: ${{ secrets.ANYPOINT_CLIENT_ID }}
+      ANYPOINT_CLIENT_SECRET: ${{ secrets.ANYPOINT_CLIENT_SECRET }}
+      ANYPOINT_ORG: ${{ secrets.ANYPOINT_ORG_ID }}
+    # defaults:
+    #   run:
+    #     working-directory: my-custom-policy   # uncomment if Makefile is in a subfolder
     steps:
-      - name: Mask and export credentials
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-wasip1
+
+      - name: Install Anypoint CLI + PDK plugin
         run: |
-          SECRET=$(jq -r '.inputs.client_secret' "$GITHUB_EVENT_PATH")
-          CID=$(jq -r '.inputs.client_id' "$GITHUB_EVENT_PATH")
-          ORG=$(jq -r '.inputs.org_id' "$GITHUB_EVENT_PATH")
-          echo "::add-mask::$SECRET"
-          echo "::add-mask::$CID"
-          echo "ANYPOINT_CLIENT_ID=$CID" >> $GITHUB_ENV
-          echo "ANYPOINT_CLIENT_SECRET=$SECRET" >> $GITHUB_ENV
-          echo "ANYPOINT_ORG=$ORG" >> $GITHUB_ENV
+          npm install -g anypoint-cli-v4
+          anypoint-cli-v4 plugins:install anypoint-cli-pdk-plugin
+          anypoint-cli-v4 --version
 
-      - uses: actions/checkout@v4
-      # ... same Rust / Node / CLI / make build steps as before ...
+      - name: Setup (installs cargo-anypoint)
+        run: make setup
 
-      - name: Publish or release
-        run: make ${{ inputs.mode }}
+      - name: Verify tools
+        run: |
+          which anypoint-cli-v4
+          cargo anypoint --help | head -5
+
+      - name: Build
+        run: make build
+
+      - name: Publish
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+        run: make publish
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: make release
