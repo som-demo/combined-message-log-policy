@@ -1,0 +1,138 @@
+# Builds the combined-message-logging Flex Gateway policy and publishes it to
+# Anypoint Exchange in the organization given when the workflow is run.
+#
+# Run it from GitHub: Actions → "Publish policy to Anypoint" → Run workflow.
+#
+# The credentials are those of an Anypoint connected app ("App acts on its own
+# behalf (client credentials)") with the Exchange Contributor scope in the
+# target organization.
+#
+# NOTE: workflow_dispatch inputs are NOT secrets. Values typed into the form are
+# kept in the run's event payload, readable by anyone with read access to the
+# repository. The secret is masked in the logs, but prefer leaving the secret
+# field empty and storing it as the ANYPOINT_CLIENT_SECRET repository (or
+# environment) secret instead — the workflow falls back to it.
+
+name: Publish policy to Anypoint
+
+on:
+  workflow_dispatch:
+    inputs:
+      org_id:
+        description: "Anypoint organization (business group) ID to publish to"
+        required: true
+        type: string
+      client_id:
+        description: "Connected app client ID"
+        required: true
+        type: string
+      client_secret:
+        description: "Connected app client secret (leave empty to use the ANYPOINT_CLIENT_SECRET secret)"
+        required: false
+        type: string
+      release_type:
+        description: "publish = development version, release = release version"
+        required: true
+        type: choice
+        options:
+          - publish
+          - release
+        default: publish
+      anypoint_host:
+        description: "Anypoint control plane"
+        required: true
+        type: choice
+        options:
+          - anypoint.mulesoft.com
+          - eu1.anypoint.mulesoft.com
+          - gov.anypoint.mulesoft.com
+        default: anypoint.mulesoft.com
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-policy
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # Mask the prompted values first, so later steps can't print them.
+      # Inputs reach the scripts only through env (never ${{ }} inside run:)
+      # so they can't inject shell commands.
+      - name: Mask and validate inputs
+        env:
+          IN_ORG_ID: ${{ inputs.org_id }}
+          IN_CLIENT_ID: ${{ inputs.client_id }}
+          IN_CLIENT_SECRET: ${{ inputs.client_secret }}
+          FALLBACK_SECRET: ${{ secrets.ANYPOINT_CLIENT_SECRET }}
+        run: |
+          secret="${IN_CLIENT_SECRET:-$FALLBACK_SECRET}"
+          if [ -n "$IN_CLIENT_SECRET" ]; then echo "::add-mask::$IN_CLIENT_SECRET"; fi
+          echo "::add-mask::$IN_CLIENT_ID"
+          if [ -z "$secret" ]; then
+            echo "::error::No client secret: enter one or set the ANYPOINT_CLIENT_SECRET secret."
+            exit 1
+          fi
+          if ! printf '%s' "$IN_ORG_ID" | grep -Eq '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'; then
+            echo "::error::org_id must be an organization UUID."
+            exit 1
+          fi
+          {
+            echo "ANYPOINT_CLIENT_ID=$IN_CLIENT_ID"
+            echo "ANYPOINT_CLIENT_SECRET=$secret"
+            echo "ANYPOINT_ORG=$IN_ORG_ID"
+          } >> "$GITHUB_ENV"
+
+      - uses: actions/checkout@v4
+
+      # Hidden files (e.g. .project.yaml) are easily left out when a folder is
+      # uploaded through the GitHub web UI; fail early with a clear message.
+      - name: Check policy project files
+        run: |
+          missing=0
+          for f in .project.yaml Cargo.toml Cargo.lock Makefile definition/gcl.yaml src/lib.rs; do
+            if [ ! -e "$f" ]; then echo "::error::Missing $f in the repository root."; missing=1; fi
+          done
+          exit $missing
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Anypoint CLI and PDK plugin
+        run: |
+          npm install -g anypoint-cli-v4-public@1.6.27
+          anypoint-cli-v4 plugins:install anypoint-pdk-plugin@1.10.1
+          anypoint-cli-v4 --version
+
+      - name: Install Rust (wasm32-wasip1)
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-wasip1
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install cargo-anypoint
+        run: |
+          if ! cargo anypoint --version 2>/dev/null | grep -q '1.10.0'; then
+            make install-cargo-anypoint
+          fi
+
+      # The Exchange group ID is read from Cargo.toml; point it at the target org.
+      - name: Set target organization
+        run: |
+          sed -i -E "s/^group_id = \".*\"/group_id = \"$ANYPOINT_ORG\"/" Cargo.toml
+          grep -n '^group_id' Cargo.toml
+
+      - name: Unit tests
+        run: cargo test --lib
+
+      - name: Build and publish
+        env:
+          ANYPOINT_HOST: ${{ inputs.anypoint_host }}
+          RELEASE_TYPE: ${{ inputs.release_type }}
+        run: make "$RELEASE_TYPE"
