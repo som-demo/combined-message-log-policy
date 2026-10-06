@@ -1,0 +1,14 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/serde-1b396e3c53d182fe.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/serde-a88a5dbac8ad6c43/out/private.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libserde-1b396e3c53d182fe.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/serde-a88a5dbac8ad6c43/out/private.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libserde-1b396e3c53d182fe.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/serde-a88a5dbac8ad6c43/out/private.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs:
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/serde-a88a5dbac8ad6c43/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/serde-a88a5dbac8ad6c43/out

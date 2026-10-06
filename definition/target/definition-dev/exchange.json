@@ -1,0 +1,7 @@
+{
+  "assetId": "combined-message-logging-dev",
+  "groupId": "6e936503-6d69-41f1-a4fa-408d8b6543c4",
+  "version": "1.0.0-20261004032454",
+  "name": "combined-message-logging DEV",
+  "main": "gcl.yaml"
+}

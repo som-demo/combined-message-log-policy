@@ -1,0 +1,10 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/crypto_common-2fc0286b55a54f0c.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/hazmat.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/generate.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/../README.md
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libcrypto_common-2fc0286b55a54f0c.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/hazmat.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/generate.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/../README.md
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libcrypto_common-2fc0286b55a54f0c.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/hazmat.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/generate.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/../README.md
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/hazmat.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/generate.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crypto-common-0.2.2/src/../README.md:

@@ -1,0 +1,10 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/pdk_ldap_lib-7ee1ac14fdb3d3fc.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libpdk_ldap_lib-7ee1ac14fdb3d3fc.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libpdk_ldap_lib-7ee1ac14fdb3d3fc.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs:

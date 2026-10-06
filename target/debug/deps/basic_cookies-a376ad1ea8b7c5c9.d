@@ -1,0 +1,13 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/basic_cookies-a376ad1ea8b7c5c9.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie_lexer.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/linked_list.rs /Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/basic-cookies-d58b5265f4814303/out/cookie_grammar.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libbasic_cookies-a376ad1ea8b7c5c9.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie_lexer.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/linked_list.rs /Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/basic-cookies-d58b5265f4814303/out/cookie_grammar.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libbasic_cookies-a376ad1ea8b7c5c9.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie_lexer.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/linked_list.rs /Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/basic-cookies-d58b5265f4814303/out/cookie_grammar.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/cookie_lexer.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-cookies-0.1.5/src/linked_list.rs:
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/basic-cookies-d58b5265f4814303/out/cookie_grammar.rs:
+
+# env-dep:OUT_DIR=/Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/basic-cookies-d58b5265f4814303/out

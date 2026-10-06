@@ -1,0 +1,11 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/inout-bf8817d934b9a7f0.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/errors.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout_buf.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/reserved.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libinout-bf8817d934b9a7f0.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/errors.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout_buf.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/reserved.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libinout-bf8817d934b9a7f0.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/errors.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout_buf.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/reserved.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/errors.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/inout_buf.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inout-0.2.2/src/reserved.rs:

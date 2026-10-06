@@ -1,0 +1,88 @@
+cargo:rerun-if-env-changed=LIBZ_SYS_STATIC
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=zng/cmake.rs
+cargo:rerun-if-changed=zng/cc.rs
+cargo:rerun-if-env-changed=ZLIB_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=ZLIB_STATIC
+cargo:rerun-if-env-changed=ZLIB_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=ZLIB_STATIC
+cargo:rerun-if-env-changed=ZLIB_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:warning=Could not find zlib include paths via pkg-config: Could not run `PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 pkg-config --libs --cflags zlib`
+The pkg-config command could not be found.
+
+Most likely, you need to install a pkg-config package for your OS.
+Try `brew install pkgconf` if you have Homebrew.
+
+If you've already installed it, ensure the pkg-config command is one of the
+directories in the PATH environment variable.
+
+If you did not expect this build to link to a pre-installed system library,
+then check documentation of the libz-sys crate for an option to
+build the library from source, or disable features or dependencies
+that require pkg-config.
+cargo:rerun-if-env-changed=CC_aarch64-apple-darwin
+CC_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_aarch64_apple_darwin
+CC_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+cargo:rerun-if-env-changed=MACOSX_DEPLOYMENT_TARGET
+MACOSX_DEPLOYMENT_TARGET = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+running env -i AI_AGENT="claude-code_2-1-280_agent" ANTHROPIC_BASE_URL="https://eng-ai-model-gateway.sfproxy.devx-preprod.aws-esvc1-useast2.aws.sfdc.cl" ANTHROPIC_BEDROCK_BASE_URL="https://eng-ai-model-gateway.sfproxy.devx-preprod.aws-esvc1-useast2.aws.sfdc.cl/bedrock" ANTHROPIC_CUSTOM_HEADERS="x-sf-ai-harness-client-id: claude" ANTHROPIC_DEFAULT_HAIKU_MODEL="us.anthropic.claude-haiku-4-5-20251001-v1:0" ANTHROPIC_DEFAULT_OPUS_MODEL="us.anthropic.claude-opus-5-5[1m]" ANTHROPIC_DEFAULT_SONNET_MODEL="us.anthropic.claude-sonnet-5-5" CARGO="/Users/alick.wong/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo" CARGO_CFG_DEBUG_ASSERTIONS="" CARGO_CFG_FEATURE="libc" CARGO_CFG_PANIC="unwind" CARGO_CFG_TARGET_ABI="" CARGO_CFG_TARGET_ARCH="aarch64" CARGO_CFG_TARGET_ENDIAN="little" CARGO_CFG_TARGET_ENV="" CARGO_CFG_TARGET_FAMILY="unix" CARGO_CFG_TARGET_FEATURE="aes,crc,dit,dotprod,dpb,dpb2,fcma,fhm,flagm,fp16,frintts,jsconv,lor,lse,neon,paca,pacg,pan,pmuv3,ras,rcpc,rcpc2,rdm,sb,sha2,sha3,ssbs,vh" CARGO_CFG_TARGET_HAS_ATOMIC="128,16,32,64,8,ptr" CARGO_CFG_TARGET_HAS_ATOMIC_PRIMITIVE_ALIGNMENT="128,16,32,64,8,ptr" CARGO_CFG_TARGET_OS="macos" CARGO_CFG_TARGET_POINTER_WIDTH="64" CARGO_CFG_TARGET_VENDOR="apple" CARGO_CFG_UNIX="" CARGO_ENCODED_RUSTFLAGS="" CARGO_FEATURE_LIBC="1" CARGO_HOME="/Users/alick.wong/.cargo" CARGO_MAKEFLAGS="-j --jobserver-fds=3,5 --jobserver-auth=3,5" CARGO_MANIFEST_DIR="/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libz-sys-1.1.29" CARGO_MANIFEST_LINKS="z" CARGO_MANIFEST_PATH="/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libz-sys-1.1.29/Cargo.toml" CARGO_PKG_AUTHORS="Alex Crichton <alex@alexcrichton.com>:Josh Triplett <josh@joshtriplett.org>:Sebastian Thiel <sebastian.thiel@icloud.com>" CARGO_PKG_DESCRIPTION="Low-level bindings to the system libz library (also known as zlib)." CARGO_PKG_HOMEPAGE="" CARGO_PKG_LICENSE="MIT OR Apache-2.0" CARGO_PKG_LICENSE_FILE="" CARGO_PKG_NAME="libz-sys" CARGO_PKG_README="README.md" CARGO_PKG_REPOSITORY="https://github.com/rust-lang/libz-sys" CARGO_PKG_RUST_VERSION="" CARGO_PKG_VERSION="1.1.29" CARGO_PKG_VERSION_MAJOR="1" CARGO_PKG_VERSION_MINOR="1" CARGO_PKG_VERSION_PATCH="29" CARGO_PKG_VERSION_PRE="" CLAUDECODE="1" CLAUDE_AUTOCOMPACT_PCT_OVERRIDE="80" CLAUDE_CODE_AUTO_COMPACT_WINDOW="250000" CLAUDE_CODE_CHILD_SESSION="1" CLAUDE_CODE_ENABLE_AUTO_MODE="1" CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY="1" CLAUDE_CODE_ENABLE_TELEMETRY="1" CLAUDE_CODE_ENTRYPOINT="cli" CLAUDE_CODE_EXECPATH="/Users/alick.wong/.local/share/claude/versions/2.1.280" CLAUDE_CODE_MESSAGING_SOCKET="/tmp/cc-socks/46988.sock" CLAUDE_CODE_MESSAGING_TOKEN="354e39f720f433487ba318e8ff5785e7" CLAUDE_CODE_SESSION_ATTENDED="1" CLAUDE_CODE_SESSION_ID="b1350356-2248-454c-806f-fe25a8546cc1" CLAUDE_CODE_SKIP_BEDROCK_AUTH="1" CLAUDE_CODE_USE_BEDROCK="1" CLAUDE_EFFORT="medium" CLAUDE_PID="46988" COLORTERM="truecolor" COREPACK_ENABLE_AUTO_PIN="0" DEBUG="true" DISABLE_AUTOUPDATER="0" DISABLE_BUG_COMMAND="1" DISABLE_ERROR_REPORTING="1" DISABLE_TELEMETRY="1" DYLD_FALLBACK_LIBRARY_PATH="/Users/alick.wong/claude-projects/combined-message-logging/target/debug:/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps:/Users/alick.wong/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/aarch64-apple-darwin/lib:/Users/alick.wong/.rustup/toolchains/stable-aarch64-apple-darwin/lib:/Users/alick.wong/lib:/usr/local/lib:/usr/lib" FPATH="/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions" GIT_EDITOR="true" GPG_TTY="/dev/ttys001" HOME="/Users/alick.wong" HOMEBREW_CELLAR="/opt/homebrew/Cellar" HOMEBREW_PREFIX="/opt/homebrew" HOMEBREW_REPOSITORY="/opt/homebrew" HOST="aarch64-apple-darwin" INFOPATH="/opt/homebrew/share/info:" JAVA_HOME="/Users/alick.wong/.sdkman/candidates/java/current" LANG="en_SG.UTF-8" LC_ALL="C" LOGNAME="alick.wong" LaunchInstanceID="691810DA-0327-4A79-81A2-B8C0A35D94DD" MAX_MCP_OUTPUT_TOKENS="5000" NODE_EXTRA_CA_CERTS="/Users/alick.wong/.aisuite/conf/npm-sfdc-certs.pem" NODE_TLS_REJECT_UNAUTHORIZED="1" NUM_JOBS="14" NoDefaultCurrentDirectoryInExePath="1" OLDPWD="/Users/alick.wong/claude-projects/combined-message-logging" OPT_LEVEL="0" OSLogRateLimit="64" OUT_DIR="/Users/alick.wong/claude-projects/combined-message-logging/target/debug/build/libz-sys-70a5a95c75674703/out" PATH="/Users/alick.wong/.cargo/bin:/Users/alick.wong/.sdkman/candidates/java/current/bin:/Users/alick.wong/.local/bin:/Users/alick.wong/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/alick.wong/.aisuite/bin:/Users/alick.wong/.aisuite/bin/aliases:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/a11y_expert/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/aiexpertsuite/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/aisuite-nfr-analysis/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/aisuite/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/api-expert/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/browser/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/claude-unleashed/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/codesearch/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/github/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/innerloop/bin:/Users/alick.wong/.claude/plugins/cache/aiforce-support-marketplace/salesforce-claude-support/0.1.0/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/search/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/sfcli/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/slack/bin:/Users/alick.wong/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/udd/bin:/Users/alick.wong/.aisuite/marketplaces/aisuite/plugins/columbo/bin" PROFILE="debug" PWD="/Users/alick.wong/claude-projects/combined-message-logging" RUSTC="/Users/alick.wong/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc" RUSTDOC="/Users/alick.wong/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustdoc" RUSTUP_HOME="/Users/alick.wong/.rustup" RUSTUP_TOOLCHAIN="stable-aarch64-apple-darwin" RUSTUP_TOOLCHAIN_SOURCE="default" RUST_RECURSION_COUNT="1" SDKMAN_BROKER_API="https://broker.sdkman.io" SDKMAN_CANDIDATES_API="https://api.sdkman.io/2" SDKMAN_CANDIDATES_DIR="/Users/alick.wong/.sdkman/candidates" SDKMAN_DIR="/Users/alick.wong/.sdkman" SDKMAN_PLATFORM="darwinarm64" SECURITYSESSIONID="186b1" SHELL="/bin/zsh" SHLVL="2" SSH_AUTH_SOCK="/var/run/com.apple.launchd.CMIuoh8er8/Listeners" TARGET="aarch64-apple-darwin" TERM="xterm-256color" TERM_PROGRAM="Apple_Terminal" TERM_PROGRAM_VERSION="470.2" TERM_SESSION_ID="800D2D70-465D-4ED8-894B-C59B97481AD3" TMPDIR="/var/folders/_b/60464_ld2sg_z91h030m0szr0000gn/T/" USER="alick.wong" XPC_FLAGS="0x0" XPC_SERVICE_NAME="0" _="/Users/alick.wong/.cargo/bin/cargo" __CFBundleIdentifier="com.apple.Terminal" __CF_USER_TEXT_ENCODING="0x1F5:0x0:0x0" "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-gdwarf-2" "-fno-omit-frame-pointer" "-mno-omit-leaf-frame-pointer" "--target=arm64-apple-macosx" "-mmacosx-version-min=27.0" "-Wall" "-Wextra" "src/smoke.c" "-g0" "-o" "/dev/null" "-lz"
+cargo:rustc-link-lib=z

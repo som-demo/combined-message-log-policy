@@ -1,0 +1,13 @@
+{
+  "groupId": "6e936503-6d69-41f1-a4fa-408d8b6543c4",
+  "assetId": "combined-message-logging-flex",
+  "version": "1.0.0",
+  "name": "combined-message-logging flex",
+  "dependencies": [
+    {
+      "groupId": "6e936503-6d69-41f1-a4fa-408d8b6543c4",
+      "assetId": "combined-message-logging",
+      "version": "1.0.0"
+    }
+  ]
+}

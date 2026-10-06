@@ -1,0 +1,1 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/combined_message_logging.wasm: /Users/alick.wong/claude-projects/combined-message-logging/src/generated/config.rs /Users/alick.wong/claude-projects/combined-message-logging/src/generated/mod.rs /Users/alick.wong/claude-projects/combined-message-logging/src/lib.rs

@@ -1,0 +1,17 @@
+---
+apiVersion: gateway.mulesoft.com/v1alpha1
+kind: Extension
+metadata:
+  labels:
+    title: combined-message-logging DEV
+    category: Custom
+    description: Logs request and response headers of each call as one JSON entry
+    metadata/interfaceScope: api,resource
+    pdk.mulesoft.com/pdk-cli-version: 1.10.0
+  name: combined-message-logging-dev-v1-0
+spec:
+  extends:
+    - name: extension-definition
+      namespace: default
+  properties: {}
+  required: []

@@ -1,0 +1,10 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/pdk_ldap_lib-b3ad22a109ca869b.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libpdk_ldap_lib-b3ad22a109ca869b.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/debug/deps/libpdk_ldap_lib-b3ad22a109ca869b.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/builder.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/client.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-ldap-lib-1.10.0/src/error.rs:

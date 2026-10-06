@@ -1,0 +1,11 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/ipnet-c52f42151035cfce.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipext.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipnet.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/mask.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/parser.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libipnet-c52f42151035cfce.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipext.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipnet.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/mask.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/parser.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libipnet-c52f42151035cfce.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipext.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipnet.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/mask.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/parser.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipext.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/ipnet.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/mask.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.2/src/parser.rs:

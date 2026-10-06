@@ -1,0 +1,9 @@
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/pdk_json_validator_lib-56443a5f273712d4.d: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/parser.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/validator.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libpdk_json_validator_lib-56443a5f273712d4.rlib: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/parser.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/validator.rs
+
+/Users/alick.wong/claude-projects/combined-message-logging/target/wasm32-wasip1/release/deps/libpdk_json_validator_lib-56443a5f273712d4.rmeta: /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/lib.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/parser.rs /Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/validator.rs
+
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/lib.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/parser.rs:
+/Users/alick.wong/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdk-json-validator-lib-1.10.0/src/validator.rs:

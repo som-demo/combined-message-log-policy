@@ -1,0 +1,8 @@
+{
+  "title": "combined-message-logging",
+  "type": "object",
+  "$id": "combined-message-logging",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "properties": {},
+  "required": []
+}

@@ -1,0 +1,4 @@
+#%Policy Implementation 1.0
+name: combined-message-logging flex
+technology: flexGateway
+minRuntimeVersion: 1.6.1

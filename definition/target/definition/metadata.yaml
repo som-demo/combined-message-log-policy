@@ -1,0 +1,8 @@
+#%Policy Definition 0.1
+name: combined-message-logging
+category: Custom
+providedCharacteristics: []
+description: Logs request and response headers of each call as one JSON entry
+interfaceScope:
+  - api
+  - resource
