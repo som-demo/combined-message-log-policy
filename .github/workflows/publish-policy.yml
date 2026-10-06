@@ -1,0 +1,38 @@
+on:
+  workflow_dispatch:
+    inputs:
+      client_id:
+        description: 'Anypoint Connected App client ID'
+        required: true
+      client_secret:
+        description: 'Anypoint Connected App client secret'
+        required: true
+      org_id:
+        description: 'Anypoint org ID'
+        required: true
+      mode:
+        description: 'publish or release'
+        type: choice
+        options: [publish, release]
+        default: publish
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mask and export credentials
+        run: |
+          SECRET=$(jq -r '.inputs.client_secret' "$GITHUB_EVENT_PATH")
+          CID=$(jq -r '.inputs.client_id' "$GITHUB_EVENT_PATH")
+          ORG=$(jq -r '.inputs.org_id' "$GITHUB_EVENT_PATH")
+          echo "::add-mask::$SECRET"
+          echo "::add-mask::$CID"
+          echo "ANYPOINT_CLIENT_ID=$CID" >> $GITHUB_ENV
+          echo "ANYPOINT_CLIENT_SECRET=$SECRET" >> $GITHUB_ENV
+          echo "ANYPOINT_ORG=$ORG" >> $GITHUB_ENV
+
+      - uses: actions/checkout@v4
+      # ... same Rust / Node / CLI / make build steps as before ...
+
+      - name: Publish or release
+        run: make ${{ inputs.mode }}
