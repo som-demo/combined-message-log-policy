@@ -20,6 +20,9 @@ on:
 jobs:
   build-publish:
     runs-on: ubuntu-latest
+    # defaults:
+    #   run:
+    #     working-directory: my-custom-policy   # uncomment if Makefile is in a subfolder
     steps:
       - name: Mask and export credentials
         run: |
@@ -34,7 +37,31 @@ jobs:
           echo "ANYPOINT_ORG=$ORG" >> "$GITHUB_ENV"
 
       - uses: actions/checkout@v5
-      # ... setup-node, rust-toolchain, CLI install, make setup, verify, make build (unchanged) ...
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-wasip1
+
+      - name: Install Anypoint CLI + PDK plugin
+        run: |
+          npm install -g anypoint-cli-v4
+          anypoint-cli-v4 plugins:install anypoint-cli-pdk-plugin
+          anypoint-cli-v4 --version
+
+      - name: Setup (installs cargo-anypoint)
+        run: make setup
+
+      - name: Verify tools
+        run: |
+          which anypoint-cli-v4
+          cargo anypoint --help | head -5
+
+      - name: Build
+        run: make build
 
       - name: Publish or release
         run: make ${{ inputs.mode }}
