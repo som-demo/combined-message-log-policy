@@ -87,6 +87,33 @@ jobs:
             echo "ANYPOINT_ORG=$IN_ORG_ID"
           } >> "$GITHUB_ENV"
 
+      # Fail fast (before the build) if the connected app can't log in or
+      # can't see the target organization.
+      - name: Check Anypoint access
+        env:
+          ANYPOINT_HOST: ${{ inputs.anypoint_host }}
+        run: |
+          base="https://$ANYPOINT_HOST/accounts"
+          token=$(curl -sS -X POST "$base/api/v2/oauth2/token" \
+              --data-urlencode grant_type=client_credentials \
+              --data-urlencode "client_id=$ANYPOINT_CLIENT_ID" \
+              --data-urlencode "client_secret=$ANYPOINT_CLIENT_SECRET" \
+            | jq -r '.access_token // empty' 2>/dev/null || true)
+          if [ -z "$token" ]; then
+            echo "::error::Login failed: check the client ID/secret and the control plane ($ANYPOINT_HOST)."
+            exit 1
+          fi
+          echo "::add-mask::$token"
+          status=$(curl -sS -o /tmp/envs.json -w '%{http_code}' \
+            -H "Authorization: Bearer $token" "$base/api/organizations/$ANYPOINT_ORG/environments")
+          if [ "$status" != "200" ]; then
+            echo "::error::Login OK, but the app can't read organization $ANYPOINT_ORG (HTTP $status)." \
+              "Grant the connected app the View Organization, View Environment and Exchange Contributor" \
+              "scopes for this organization (Access Management → Connected Apps → Manage scopes)."
+            exit 1
+          fi
+          echo "Access to $ANYPOINT_ORG OK ($(jq '.data | length' /tmp/envs.json) environment(s) visible)."
+
       - uses: actions/checkout@v4
 
       # Hidden files (e.g. .project.yaml) are easily left out when a folder is
