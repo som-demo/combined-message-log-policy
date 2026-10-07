@@ -89,6 +89,16 @@ jobs:
 
       - uses: actions/checkout@v4
 
+      # Hidden files (e.g. .project.yaml) are easily left out when a folder is
+      # uploaded through the GitHub web UI; fail early with a clear message.
+      - name: Check policy project files
+        run: |
+          missing=0
+          for f in .project.yaml Cargo.toml Cargo.lock Makefile definition/gcl.yaml src/lib.rs; do
+            if [ ! -e "$f" ]; then echo "::error::Missing $f in the repository root."; missing=1; fi
+          done
+          exit $missing
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
